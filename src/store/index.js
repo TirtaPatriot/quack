@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
 import layout from './layout';
+import auth from './auth';
 
 Vue.use(Vuex);
 
@@ -19,6 +20,7 @@ export default function store(/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
       layout,
+      auth,
     },
     plugins: [createPersistedState()],
     // enable strict mode (adds overhead!)

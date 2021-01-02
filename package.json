@@ -14,6 +14,8 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
+    "firebase": "^8.2.1",
+    "firebaseui-id": "^4.7.1",
     "quasar": "^1.0.0",
     "vuex-persistedstate": "^3.0.0"
   },

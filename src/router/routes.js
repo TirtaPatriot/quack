@@ -5,6 +5,15 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Index.vue') },
     ],
+    meta: {
+      requiresAuth: true,
+    },
+  },
+
+  {
+    path: '/session',
+    name: 'Session',
+    component: () => import('pages/Authentication.vue'),
   },
 
   // Always leave this as last one,
