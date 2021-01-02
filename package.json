@@ -6,8 +6,8 @@
   "author": "Eko Eryanto <ekoeryanto@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "quasar dev",
-    "build": "quasar build",
+    "dev": "cross-env QENV=development quasar dev",
+    "build": "cross-env QENV=production quasar build",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
